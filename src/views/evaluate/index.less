@@ -1,0 +1,57 @@
+.evaluate-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .time-wrapper {
+    width: 240px;
+    background: #e5e5e5;
+    padding: 20px;
+
+    .time-item {
+      line-height: 24px;
+      font-size: 14px;
+    }
+  }
+
+  .content-wrapper {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .search-content {
+      text-align: left;
+      height: 50px;
+    }
+
+    .chart-wrapper {
+      flex: 1;
+      text-align: left;
+
+      .chart-box {
+        display: inline-block;
+        width: 32%;
+        height: 270px;
+        margin-right: 1%;
+        margin-bottom: 10px;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        .box {
+          border: 1px solid #ccc;
+          height: 245px;
+        }
+
+        .title {
+          margin-top: 5px;
+          text-align: center;
+          font-size: 14px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
